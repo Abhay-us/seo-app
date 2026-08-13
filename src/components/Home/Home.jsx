@@ -82,7 +82,7 @@ const Home = () => {
             </div>
             {/* /about end  */}
 
-            {/* feature start */}
+            {/* feature starts */}
             <div className="container-fluid bg-danger mt-5">
                 <div className="container">
                     <div className="row g-5">
