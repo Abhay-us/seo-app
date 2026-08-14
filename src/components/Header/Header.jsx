@@ -1,4 +1,4 @@
-import {  NavLink } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './header.css'
 import { Dropdown } from 'react-bootstrap';
 
@@ -104,8 +104,8 @@ const Header = () => {
                                 <span>Contact</span>
                             </NavLink>
                         </div>
-                        <button className='bg-primary  p-2'>
-                            Buy Pro  Version
+                        <button className=' text-white px-3 py-2  bg-secondary'>
+                            Get a Quote
                         </button>
 
                     </nav>

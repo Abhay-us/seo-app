@@ -1,7 +1,13 @@
 import './home.css'
 import heroimg from '../../assets/hero/hero-header.png'
 import aboutimg from '../../assets/hero/about.png'
-import { FaCheck, FaFacebookF, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaCheck, FaFacebookF, FaTwitter, FaInstagram, FaLinkedin, FaTrophy, FaStar } from "react-icons/fa";
+import { FaPeopleGroup } from "react-icons/fa6";
+import { MdOutlineSupportAgent } from "react-icons/md";
+import { BsCash } from "react-icons/bs";
+import { BsGraphUpArrow } from "react-icons/bs";
+import { TbCoffee } from "react-icons/tb";
+
 
 const Home = () => {
     return (
@@ -72,10 +78,10 @@ const Home = () => {
                         </div>
                         <div className='d-flex align-items-center gap-3 mt-3'>
                             <a className='text-white bg-danger p-4 py-3 '>Read More</a>
-                            <a className='btn-secondary py-2 px-3'><FaFacebookF className=' fs-5      text-white' /></a>
-                            <a className='btn-secondary py-2 px-3'><FaTwitter className=' fs-5      text-white' /></a>
-                            <a className='btn-secondary py-2 px-3'><FaInstagram className=' fs-5      text-white' /></a>
-                            <a className='btn-secondary py-2 px-3'><FaLinkedin className=' fs-5      text-white' /></a>
+                            <a className='bg-secondary btn-square'><FaFacebookF className=' fs-6   text-white' /></a>
+                            <a className='bg-secondary btn-square'><FaTwitter className=' fs-6    text-white' /></a>
+                            <a className='bg-secondary btn-square'><FaInstagram className=' fs-6    text-white' /></a>
+                            <a className='bg-secondary btn-square'><FaLinkedin className=' fs-6    text-white' /></a>
                         </div>
                     </div>
                 </div>
@@ -84,12 +90,199 @@ const Home = () => {
 
             {/* feature starts */}
             <div className="container-fluid bg-danger mt-5">
-                <div className="container">
-                    <div className="row g-5">
-                        <div className="col-6"></div>
+                <div className="container py-5">
+                    <div className="row  py-5">
+                        <div className="col-3">
+                            <div className="d-flex align-items-center   ">
+                                <div className='btn-square bg-secondary'>
+                                    <FaTrophy className='text-white  fs-5 ' />
+                                </div>
+                                <p className='text-white ms-3 m-0
+                                 fs-5'>Award  Winning</p>
+                            </div>
+                        </div>
+                        <div className="col-3">
+                            <div className="d-flex align-items-center   ">
+                                <div className='btn-square bg-secondary'>
+                                    <FaPeopleGroup className='text-white  fs-5 ' />
+                                </div>
+                                <p className='text-white ms-3 m-0
+                                 fs-5'>Professional Staff</p>
+                            </div>
+                        </div>
+                        <div className="col-3">
+                            <div className="d-flex align-items-center   ">
+                                <div className='btn-square bg-secondary'>
+                                    <MdOutlineSupportAgent className='text-white  fs-5 ' />
+                                </div>
+                                <p className='text-white ms-3 m-0
+                                 fs-5'>24/7 Support</p>
+                            </div>
+                        </div>
+                        <div className="col-3">
+                            <div className="d-flex align-items-center   ">
+                                <div className='btn-square bg-secondary'>
+                                    <BsCash className='text-white  fs-5 ' />
+                                </div>
+                                <p className='text-white ms-3 m-0
+                                 fs-5'>Fair Prices</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
+            </div>
+            {/* feature end */}
+            {/* feature info start */}
+            <div className="container pt-5 mt-5">
+                <div className='text-center'>
+                    <h1>
+                        <span className='bg-danger text-white me-3 px-2 py-1'>FEATURES</span>
+                        Why People Choose Us!
+                    </h1>
+                </div>
+                <div className="row mt-5 ">
+                    <div className='d-flex gap-5 '>
+                        <div className="col  text-center">
+                            <p><BsGraphUpArrow className='display-4   text-danger feature-icon' /></p>
+                            <h4 className='mt-4 mb-2 fw-bold'>Provern Results</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elite.</p>
+                        </div>
+                        <div className="col  text-center">
+                            <p><BsGraphUpArrow className='display-4   text-danger feature-icon' /></p>
+                            <h4 className='mt-4 mb-2 fw-bold'>Provern Results</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elite.</p>
+                        </div>
+                        <div className="col  text-center">
+                            <p><BsGraphUpArrow className='display-4   text-danger feature-icon' /></p>
+                            <h4 className='mt-4 mb-2 fw-bold'>Provern Results</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elite.</p>
+                        </div>
+                    </div>
+                    <div className='d-flex gap-5 mt-4 '>
+                        <div className="col  text-center">
+                            <p><BsGraphUpArrow className='display-4   text-danger feature-icon' /></p>
+                            <h4 className='mt-4 mb-2 fw-bold'>Provern Results</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elite.</p>
+                        </div>
+                        <div className="col  text-center">
+                            <p><BsGraphUpArrow className='display-4   text-danger feature-icon' /></p>
+                            <h4 className='mt-4 mb-2 fw-bold'>Provern Results</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elite.</p>
+                        </div>
+                        <div className="col  text-center">
+                            <p><BsGraphUpArrow className='display-4   text-danger feature-icon' /></p>
+                            <h4 className='mt-4 mb-2 fw-bold'>Provern Results</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elite.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* feature-2 end */}
 
+            {/* service start */}
+            <div className="container-fluid bg-danger mt-5">
+                <div className="container py-5">
+                    <div className="row  py-5">
+                        <div className="col-3">
+                            <div className="d-flex    ">
+                                <div className='btn-square bg-secondary'>
+                                    <FaStar className='text-white  fs-5 ' />
+                                </div>
+                                <div className='d-flex flex-column ms-3 btn-square'>
+                                    <p className='text-white 
+                                 fs-6'>Years </p>
+                                    <p className='text-white 
+                                 fs-4 fw-bolder'>1234</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div className="col-3">
+                            <div className="d-flex align-items-center   ">
+                                <div className='btn-square bg-secondary'>
+                                    <FaPeopleGroup className='text-white  fs-5 ' />
+                                </div>
+                                <div className='d-flex flex-column ms-3 btn-square'>
+                                    <p className='text-white 
+                                 fs-6'>Clients </p>
+                                    <p className='text-white 
+                                 fs-4 fw-bolder'>1234</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-3">
+                            <div className="d-flex align-items-center   ">
+                                <div className='btn-square bg-secondary'>
+                                    <FaTrophy className='text-white  fs-5 ' />
+                                </div>
+                                <div className='d-flex flex-column ms-3 btn-square'>
+                                    <p className='text-white 
+                                 fs-6'>Awards </p>
+                                    <p className='text-white 
+                                 fs-4 fw-bolder'>1234</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-3">
+                            <div className="d-flex align-items-center   ">
+                                <div className='btn-square bg-secondary'>
+                                    <TbCoffee className='text-white  fs-5 ' />
+                                </div>
+                                <div className='d-flex flex-column ms-3 btn-square'>
+                                    <p className='text-white 
+                                 fs-6'>Events </p>
+                                    <p className='text-white 
+                                 fs-4 fw-bolder'>1234</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {/* /service -content */}
+            <div className="container pt-5 mt-5">
+                <div className='text-center'>
+                    <h1>
+                        <span className='bg-danger text-white me-3 px-2 py-1'>Services</span>
+                        Why People Choose Us!
+                    </h1>
+                </div>
+                <div className="row mt-5 ">
+                    <div className='d-flex gap-5 '>
+                        <div className="col  text-center">
+                            <p><BsGraphUpArrow className='display-4   text-danger feature-icon' /></p>
+                            <h4 className='mt-4 mb-2 fw-bold'>Provern Results</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elite.</p>
+                        </div>
+                        <div className="col  text-center">
+                            <p><BsGraphUpArrow className='display-4   text-danger feature-icon' /></p>
+                            <h4 className='mt-4 mb-2 fw-bold'>Provern Results</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elite.</p>
+                        </div>
+                        <div className="col  text-center">
+                            <p><BsGraphUpArrow className='display-4   text-danger feature-icon' /></p>
+                            <h4 className='mt-4 mb-2 fw-bold'>Provern Results</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elite.</p>
+                        </div>
+                    </div>
+                    <div className='d-flex gap-5 mt-4 '>
+                        <div className="col  text-center">
+                            <p><BsGraphUpArrow className='display-4   text-danger feature-icon' /></p>
+                            <h4 className='mt-4 mb-2 fw-bold'>Provern Results</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elite.</p>
+                        </div>
+                        <div className="col  text-center">
+                            <p><BsGraphUpArrow className='display-4   text-danger feature-icon' /></p>
+                            <h4 className='mt-4 mb-2 fw-bold'>Provern Results</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elite.</p>
+                        </div>
+                        <div className="col  text-center">
+                            <p><BsGraphUpArrow className='display-4   text-danger feature-icon' /></p>
+                            <h4 className='mt-4 mb-2 fw-bold'>Provern Results</h4>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur adipisicing elite.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
 
