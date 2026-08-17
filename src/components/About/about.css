@@ -1,0 +1,49 @@
+.about-banner {
+  height: 360px;
+}
+.feature-icon {
+  stroke-width: 1.5;
+}
+
+/* team */
+.team-div img {
+  height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.team-left-overlay,
+.team-right-overlay {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background: #e31327;
+  transition: transform 0.5s ease;
+  z-index: 1;
+}
+
+.team-left-overlay {
+  left: 0;
+  transform: translateX(-100%);
+}
+
+.team-right-overlay {
+  right: 0;
+  transform: translateX(100%);
+}
+
+.team-div:hover .team-left-overlay,
+.team-div:hover .team-right-overlay {
+  transform: translateX(0);
+}
+
+.team-content {
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease 0.4s;
+}
+
+.team-div:hover .team-content {
+  opacity: 1;
+}

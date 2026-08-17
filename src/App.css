@@ -33,6 +33,9 @@ h6 {
 .bg-secondary {
   background-color: #0b2154 !important;
 }
+.text-secondary {
+  color: #0b2154 !important;
+}
 .btn-square {
   display: flex;
   align-items: center;
@@ -42,5 +45,14 @@ h6 {
   height: 48px;
 }
 .bg-danger {
-  background-color: #d81324 !important;
+  background-color: #d81323e8 !important;
+}
+.txt-grey {
+  color: grey !important;
+}
+.bg-grey {
+  background-color: rgba(128, 128, 128, 0.074);
+}
+.cursor-pointer {
+  cursor: pointer;
 }

@@ -1,0 +1,7 @@
+.price-div {
+  transition: all ease 0.3s;
+ 
+}
+.price-div:hover {
+  transform: translateY(-19px);
+}
