@@ -16,7 +16,7 @@ const Faqs = () => {
     }, []);
     return (
         <>
-            <div className="container-fluid bg-danger about-banner">
+            <div className="container-fluid bg-danger hero-container about-banner">
                 <div className="container h-100">
                     <div className="row h-100 align-items-center">
 
@@ -62,9 +62,9 @@ const Faqs = () => {
                     </div>
 
                 </div>
-                <div className="row px-5">
-                    <div className="col-12 d-flex justify-content-center px-5">
-                        <div className="position-relative w-75">
+                <div className="row px-2 px-md-5">
+                    <div className="col-12 d-flex justify-content-center px-2 px-md-5">
+                        <div className="position-relative w-100 w-md-75">
                             <input
                                 className="form-control p-3 service-input"
                                 type="text"
@@ -79,7 +79,7 @@ const Faqs = () => {
 
             <div className="container my-5">
                 <div className="row g-4 py-5">
-                    <div className="col">
+                    <div className="col-12 col-lg-6">
                         <h2 className='mt-4'>General SEO  Services</h2>
                         <div className='accordin-div'>
                             <Accordion>
@@ -148,7 +148,7 @@ const Faqs = () => {
                         </div>
 
                     </div>
-                    <div className="col">
+                    <div className="col-12 col-lg-6">
                         <h2 className='mt-4'>Pricing , Result & Support  </h2>
                         <div className='accordin-div'>
                             <Accordion>

@@ -4,6 +4,8 @@ import './index.css'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap/dist/js/bootstrap.min'
 import './js/script.js'
+import './js/swiper.js'
+
 
 import App from './App.jsx'
 

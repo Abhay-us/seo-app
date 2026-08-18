@@ -15,7 +15,7 @@ const ErrorPage = () => {
     }, []);
     return (
         <>
-            <div className="container-fluid bg-danger about-banner">
+            <div className="container-fluid bg-danger hero-container about-banner">
                 <div className="container h-100">
                     <div className="row h-100 align-items-center">
 
@@ -65,7 +65,7 @@ const ErrorPage = () => {
                             Page Not Found
                         </h2>
 
-                        <p className="txt-grey px-5 mx-5 fs-6 mb-4">
+                        <p className="txt-grey px-2 px-md-5 mx-2 mx-md-5 fs-6 mb-4">
                             We’re sorry, the page you have looked for does not
                             exist in our website! Maybe go to our home page or try
                             to use a search?

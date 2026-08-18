@@ -6,7 +6,11 @@ import { MdEmail } from 'react-icons/md';
 import { FaArrowPointer } from 'react-icons/fa6';
 import { useEffect } from 'react';
 import initScrollReveal from '../../js/scrollReveal';
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import swiper from "../../js/swiper";
+import img1 from '../../assets/footer/project-1.jpg'
+import img2 from '../../assets/footer/project-2.jpg'
+import img3 from '../../assets/footer/project-3.jpg'
 const Service = () => {
     useEffect(() => {
         const sr = initScrollReveal();
@@ -19,7 +23,7 @@ const Service = () => {
 
     return (
         <>
-            <div className="container-fluid bg-danger about-banner">
+            <div className="container-fluid bg-danger hero-container about-banner">
                 <div className="container h-100">
                     <div className="row h-100 align-items-center">
 
@@ -66,8 +70,8 @@ const Service = () => {
                             What Solutions We Provide
                         </h1>
                     </div>
-                    <div className="row mt-5  gap-3 g-5">
-                        <div className="col-12 col-md-6 col-lg p-0 reveal service-div  ">
+                    <div className="row mt-5 g-4">
+                        <div className="col-12 col-md-6 col-lg-4 p-0 reveal service-div  ">
                             <div className="d-flex">
                                 <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
                                     <p className=" ">
@@ -82,7 +86,7 @@ const Service = () => {
                             </p>
                             <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
                         </div>
-                        <div className="col-12 col-md-6 col-lg p-0 reveal service-div  ">
+                        <div className="col-12 col-md-6 col-lg-4 p-0 reveal service-div  ">
                             <div className="d-flex">
                                 <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
                                     <p className=" ">
@@ -98,7 +102,7 @@ const Service = () => {
                             </p>
                             <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
                         </div>
-                        <div className="col-12 col-md-6 col-lg p-0 reveal service-div  ">
+                        <div className="col-12 col-md-6 col-lg-4 p-0 reveal service-div  ">
                             <div className="d-flex">
                                 <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
                                     <p className=" ">
@@ -113,53 +117,53 @@ const Service = () => {
                             </p>
                             <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
                         </div>
-                        <div className="row mt-5  gap-3 g-5">
-                            <div className="col-12 col-md-6 col-lg p-0 reveal service-div ">
-                                <div className="d-flex">
-                                    <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
-                                        <p className=" ">
-                                            <MdEmail className="display-6   text-white feature-icon" />
-                                        </p>
-                                    </div>
-                                    <h4 className="mt-4 mb-2 fw-bolder ms-4">Email Marketing</h4>
+                    </div>
+                    <div className="row mt-4 g-4">
+                        <div className="col-12 col-md-6 col-lg-4 p-0 reveal service-div ">
+                            <div className="d-flex">
+                                <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
+                                    <p className=" ">
+                                        <MdEmail className="display-6   text-white feature-icon" />
+                                    </p>
                                 </div>
-
-                                <p className="ps-5 py-3">
-                                    Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
-                                </p>
-                                <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                                <h4 className="mt-4 mb-2 fw-bolder ms-4">Email Marketing</h4>
                             </div>
-                            <div className="col-12 col-md-6 col-lg p-0 reveal service-div  ">
-                                <div className="d-flex">
-                                    <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
-                                        <p className=" ">
-                                            <FaArrowPointer className="display-6   text-white feature-icon" />
-                                        </p>
-                                    </div>
-                                    <h4 className="mt-4 mb-2 fw-bolder ms-4">PPC Advertising</h4>
+
+                            <p className="ps-5 py-3">
+                                Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
+                            </p>
+                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                        </div>
+                        <div className="col-12 col-md-6 col-lg-4 p-0 reveal service-div  ">
+                            <div className="d-flex">
+                                <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
+                                    <p className=" ">
+                                        <FaArrowPointer className="display-6   text-white feature-icon" />
+                                    </p>
                                 </div>
-
-                                <p className="ps-5 py-3">
-                                    Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
-                                </p>
-                                <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                                <h4 className="mt-4 mb-2 fw-bolder ms-4">PPC Advertising</h4>
                             </div>
-                            <div className="col-12 col-md-6 col-lg p-0 reveal service-div  ">
-                                <div className="d-flex">
-                                    <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
-                                        <p className=" ">
-                                            <FaMobileAlt className="display-6   text-white feature-icon" />
-                                        </p>
-                                    </div>
-                                    <h4 className="mt-4 mb-2 fw-bolder ms-4">
-                                        App Development</h4>
+
+                            <p className="ps-5 py-3">
+                                Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
+                            </p>
+                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                        </div>
+                        <div className="col-12 col-md-6 col-lg-4 p-0 reveal service-div  ">
+                            <div className="d-flex">
+                                <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
+                                    <p className=" ">
+                                        <FaMobileAlt className="display-6   text-white feature-icon" />
+                                    </p>
                                 </div>
-
-                                <p className="ps-5 py-3">
-                                    Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
-                                </p>
-                                <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                                <h4 className="mt-4 mb-2 fw-bolder ms-4">
+                                    App Development</h4>
                             </div>
+
+                            <p className="ps-5 py-3">
+                                Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
+                            </p>
+                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -241,6 +245,117 @@ const Service = () => {
                 </div>
             </div>
             {/* end */}
+
+            {/* testimonials */}
+            <div className="container my-5">
+                <div className="row py-5">
+                    <div className="col d-flex flex-column justify-content-center align-items-center ">
+                        <h1 className="text-center">
+                            <span className="bg-danger px-2 me-1 mt-5 text-white text-uppercase">Testimonials</span> Our Clients Say ! </h1>
+                    </div>
+                    <div className="row mt-5">
+
+                        <div className="col">
+
+                            <Swiper
+                                {...swiper}
+                                className="testimonial-swiper"
+                            >
+                                {/* Slide 1 */}
+                                <SwiperSlide>
+                                    <div className="testimonial-item">
+
+                                        <div className="testimonial-img">
+                                            <img src={img1} alt="Client" />
+                                        </div>
+
+                                        <div className="testimonial-card">
+
+                                            <div className="quote-icon">
+                                                <i className="fa fa-quote-left"></i>
+                                            </div>
+
+                                            <p>
+                                                Clita clita tempor justo dolor ipsum amet kasd amet duo
+                                                justo duo duo labore sed sed. Magna ut diam sit et amet
+                                                stet eos sed clita erat magna elitr erat sit sit erat at
+                                                rebum justo sea clita.
+                                            </p>
+
+                                            <h3>Alexander Bell</h3>
+
+                                            <span>Programmer</span>
+
+                                        </div>
+
+                                    </div>
+                                </SwiperSlide>
+
+
+                                {/* Slide 2 */}
+                                <SwiperSlide>
+                                    <div className="testimonial-item">
+
+                                        <div className="testimonial-img">
+                                            <img src={img2} alt="Client" />
+                                        </div>
+
+                                        <div className="testimonial-card">
+
+                                            <div className="quote-icon">
+                                                <i className="fa fa-quote-left"></i>
+                                            </div>
+
+                                            <p>
+                                                Magna ut diam sit et amet stet eos sed clita erat magna
+                                                elitr erat sit sit erat at rebum justo sea clita.
+                                            </p>
+
+                                            <h3>Pakura</h3>
+
+                                            <span>Designer</span>
+
+                                        </div>
+
+                                    </div>
+                                </SwiperSlide>
+
+
+                                {/* Slide 3 */}
+                                <SwiperSlide>
+                                    <div className="testimonial-item">
+
+                                        <div className="testimonial-img">
+                                            <img src={img3} alt="Client" />
+                                        </div>
+
+                                        <div className="testimonial-card">
+
+                                            <div className="quote-icon">
+                                                <i className="fa fa-quote-left"></i>
+                                            </div>
+
+                                            <p>
+                                                Clita clita tempor justo dolor ipsum amet kasd amet duo
+                                                justo duo duo labore sed sed. Magna ut diam sit et amet
+                                                stet eos sed clita erat magna elitr erat sit sit erat.
+                                            </p>
+
+                                            <h3>Bradley</h3>
+
+                                            <span>Developer</span>
+
+                                        </div>
+
+                                    </div>
+                                </SwiperSlide>
+                            </Swiper>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
         </>
     );
 };

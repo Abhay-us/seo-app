@@ -18,7 +18,7 @@ const ServiceDetails = () => {
 
     return (
         <>
-            <div className="container-fluid bg-danger about-banner">
+            <div className="container-fluid bg-danger hero-container about-banner">
                 <div className="container h-100">
                     <div className="row h-100 align-items-center">
 
@@ -57,20 +57,20 @@ const ServiceDetails = () => {
             {/* // service details content */}
             <div className="container my-5">
                 <div className="row py-5">
-                    <div className="col-8 px-4">
+                    <div className="col-12 col-lg-8 px-4">
                         <div className="d-flex flex-column">
-                            <img src={serviceDetailImg} alt="img" />
+                            <img className="img-fluid" src={serviceDetailImg} alt="img" />
 
                             <h1 className='my-4'>Project Highlights</h1>
                             <p className='me-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deleniti tempora nostrum, deserunt ipsam eius hic, explicabo quibusdam incidunt labore dolorum porro eligendi in accusantium repellendus voluptates quisquam culpa saepe?Lorem ipsum dolor sit amet, consectetur adipisicing elit. In tenetur, consequatur necessitatibus temporibus eos neque veritatis officiis perferendis ipsam, repellendus numquam sed dolorem repellat, totam voluptate doloremque nulla magni vitae facilis ut optio dolorum. Cum illo iusto totam officia vero?</p>
                             <p className='mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde deleniti tempora nostrum, deserunt ipsam eius hic, explicabo quibusdam incidunt labore dolorum porro eligendi in accusantium repellendus voluptates quisquam culpa saepe?Lorem ipsum dolor sit amet, consectetur adipisicing elit. In tenetur, consequatur necessitatibus temporibus eos neque veritatis officiis perferendis ipsam, repellendus numquam sed dolorem repellat, totam voluptate doloremque nulla magni vitae facilis ut optio dolorum. Cum illo iusto totam officia vero?</p>
 
-                            <div className='d-flex gap-3 mt-4 '>
-                                <div className="col ">
+                            <div className='d-flex flex-column flex-md-row gap-3 mt-4 '>
+                                <div className="col-12 col-md-6 ">
                                     <img className='img-fluid' src={serviceDetailImg} alt="ss" />
                                 </div>
 
-                                <div className="col">
+                                <div className="col-12 col-md-6">
                                     <div className="d-flex flex-column py-4">
                                         <div className="d-flex align-items-center border-bottom pb-2 ">
                                             <IoIosCheckbox className='text-white bg-danger' />
@@ -102,18 +102,18 @@ const ServiceDetails = () => {
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, similique Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, expedita..
                                 </p>
                                 <div className='row mt-4 g-3'>
-                                    <div className="col">
+                                    <div className="col-6 col-md-3">
                                         <img className='img-fluid' src={serviceDetailImg} alt="" />
                                     </div>
-                                    <div className="col">
-                                        <img className='img-fluid' src={serviceDetailImg} alt="" />
-                                    </div>
-
-                                    <div className="col">
+                                    <div className="col-6 col-md-3">
                                         <img className='img-fluid' src={serviceDetailImg} alt="" />
                                     </div>
 
-                                    <div className="col">
+                                    <div className="col-6 col-md-3">
+                                        <img className='img-fluid' src={serviceDetailImg} alt="" />
+                                    </div>
+
+                                    <div className="col-6 col-md-3">
                                         <img className='img-fluid' src={serviceDetailImg} alt="" />
                                     </div>
 
@@ -130,7 +130,7 @@ const ServiceDetails = () => {
                         </div>
                     </div>
 
-                    <div className="col-4">
+                    <div className="col-12 col-lg-4">
                         <div className='position-relative'>
                             <input className='form-control p-3 service-input' type="text" placeholder='Search...' />
                             <FaSearch className='position-absolute top-0 fs-3 end-0 mt-3 text-danger me-3' />

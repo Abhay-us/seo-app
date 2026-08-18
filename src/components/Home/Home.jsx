@@ -13,8 +13,7 @@ import {
     FaLaptop, FaMobileAlt
 } from "react-icons/fa";
 import { FaPeopleGroup, FaArrowPointer, } from "react-icons/fa6";
-import { MdOutlineSupportAgent, MdEmail } from "react-icons/md";
-import { BsCash } from "react-icons/bs";
+import { MdEmail } from "react-icons/md";
 import { BsGraphUpArrow, BsSendFill } from "react-icons/bs";
 import { TbCoffee } from "react-icons/tb";
 import { IoShareSocial } from "react-icons/io5";
@@ -23,6 +22,13 @@ import post02 from '../../assets/hero/team/post-02.png'
 import post03 from '../../assets/hero/team/post-03.png'
 import post04 from '../../assets/hero/team/post-04.png'
 import { initScrollReveal } from "../../js/scrollReveal";
+import img1 from '../../assets/footer/project-1.jpg'
+import img2 from '../../assets/footer/project-2.jpg'
+import img3 from '../../assets/footer/project-3.jpg'
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+
+import swiper from "../../js/swiper";
 
 
 const Home = () => {
@@ -39,7 +45,7 @@ const Home = () => {
     return (
         <>
             {/* hero start */}
-            <div className="container-fluid bg-danger pt-5 ">
+            <div className="container-fluid bg-danger hero-container py-5 ">
                 <div className="container pt-5 ">
                     <div className="row py-5">
                         <div className="col-12 col-md-6 ">
@@ -136,51 +142,83 @@ const Home = () => {
                                 <div className="btn-square bg-secondary">
                                     <FaStar className="text-white  fs-5 " />
                                 </div>
-                                <p
-                                    className="text-white ms-3 m-0
-                                 fs-5"
-                                >
-                                    Award Winning
-                                </p>
+                                <div className="d-flex flex-column ms-3 btn-square ">
+                                    <p
+                                        className="text-white 
+                                 fs-6"
+                                    >
+                                        Years
+                                    </p>
+                                    <p
+                                        className="text-white 
+                                 fs-4 fw-bolder"
+                                    >
+                                        1234
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div className="col-6 col-md-3 reveal-left">
-                            <div className="d-flex align-items-center reveal-sequential  ">
+                        <div className="col-6 col-md-3">
+                            <div className="d-flex align-items-center   reveal-sequential">
                                 <div className="btn-square bg-secondary">
                                     <FaPeopleGroup className="text-white  fs-5 " />
                                 </div>
-                                <p
-                                    className="text-white ms-3 m-0
-                                 fs-5"
-                                >
-                                    Professional Staff
-                                </p>
+                                <div className="d-flex flex-column ms-3 btn-square ">
+                                    <p
+                                        className="text-white 
+                                 fs-6"
+                                    >
+                                        Clients
+                                    </p>
+                                    <p
+                                        className="text-white 
+                                 fs-4 fw-bolder"
+                                    >
+                                        1234
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div className="col-6 col-md-3 reveal-left">
-                            <div className="d-flex align-items-center reveal-sequential  ">
+                        <div className="col-6 col-md-3">
+                            <div className="d-flex align-items-center   reveal-sequential">
                                 <div className="btn-square bg-secondary">
-                                    <MdOutlineSupportAgent className="text-white  fs-5 " />
+                                    <FaTrophy className="text-white  fs-5 " />
                                 </div>
-                                <p
-                                    className="text-white ms-3 m-0
-                                 fs-5"
-                                >
-                                    24/7 Support
-                                </p>
+                                <div className="d-flex flex-column ms-3 btn-square ">
+                                    <p
+                                        className="text-white 
+                                 fs-6"
+                                    >
+                                        Awards
+                                    </p>
+                                    <p
+                                        className="text-white 
+                                 fs-4 fw-bolder"
+                                    >
+                                        1234
+                                    </p>
+                                </div>
                             </div>
                         </div>
-                        <div className="col-6 col-md-3 reveal-left">
-                            <div className="d-flex align-items-center reveal-sequential  ">
+                        <div className="col-6 col-md-3">
+                            <div className="d-flex align-items-center   reveal-sequential">
                                 <div className="btn-square bg-secondary">
-                                    <BsCash className="text-white  fs-5 " />
+                                    <TbCoffee className="text-white  fs-5 " />
                                 </div>
-                                <p
-                                    className="text-white ms-3 m-0
-                                 fs-5"
-                                >
-                                    Fair Prices
-                                </p>
+                                <div className="d-flex flex-column ms-3 btn-square ">
+                                    <p
+                                        className="text-white 
+                                 fs-6"
+                                    >
+                                        Events
+                                    </p>
+                                    <p
+                                        className="text-white 
+                                 fs-4 fw-bolder"
+                                    >
+                                        1234
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -417,60 +455,60 @@ const Home = () => {
                             </p>
                             <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
                         </div>
-                        <div className="row mt-5  gap-3 g-5">
-                            <div className="col-12 col-md-6 col-lg service-div reveal">
-                                <div className="d-flex">
-                                    <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
-                                        <p className=" ">
-                                            <MdEmail className="display-6   text-white feature-icon" />
-                                        </p>
-                                    </div>
-                                    <h4 className="mt-4 mb-2 fw-bolder ms-4">Email Marketing</h4>
+                    </div>
+                    <div className="row mt-5  gap-3 g-5">
+                        <div className="col-12 col-md-6 col-lg service-div reveal">
+                            <div className="d-flex">
+                                <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
+                                    <p className=" ">
+                                        <MdEmail className="display-6   text-white feature-icon" />
+                                    </p>
                                 </div>
-
-                                <p className="ps-5 py-3">
-                                    Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
-                                </p>
-                                <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                                <h4 className="mt-4 mb-2 fw-bolder ms-4">Email Marketing</h4>
                             </div>
-                            <div className="col-12 col-md-6 col-lg service-div reveal ">
-                                <div className="d-flex">
-                                    <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
-                                        <p className=" ">
-                                            <FaArrowPointer className="display-6   text-white feature-icon" />
-                                        </p>
-                                    </div>
-                                    <h4 className="mt-4 mb-2 fw-bolder ms-4">PPC Advertising</h4>
+
+                            <p className="ps-5 py-3">
+                                Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
+                            </p>
+                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                        </div>
+                        <div className="col-12 col-md-6 col-lg service-div reveal ">
+                            <div className="d-flex">
+                                <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
+                                    <p className=" ">
+                                        <FaArrowPointer className="display-6   text-white feature-icon" />
+                                    </p>
                                 </div>
-
-                                <p className="ps-5 py-3">
-                                    Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
-                                </p>
-                                <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                                <h4 className="mt-4 mb-2 fw-bolder ms-4">PPC Advertising</h4>
                             </div>
-                            <div className="col-12 col-md-6 col-lg service-div reveal ">
-                                <div className="d-flex">
-                                    <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
-                                        <p className=" ">
-                                            <FaMobileAlt className="display-6   text-white feature-icon" />
-                                        </p>
-                                    </div>
-                                    <h4 className="mt-4 mb-2 fw-bolder ms-4">
-                                        App Development</h4>
+
+                            <p className="ps-5 py-3">
+                                Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
+                            </p>
+                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                        </div>
+                        <div className="col-12 col-md-6 col-lg service-div reveal ">
+                            <div className="d-flex">
+                                <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
+                                    <p className=" ">
+                                        <FaMobileAlt className="display-6   text-white feature-icon" />
+                                    </p>
                                 </div>
-
-                                <p className="ps-5 py-3">
-                                    Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
-                                </p>
-                                <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                                <h4 className="mt-4 mb-2 fw-bolder ms-4">
+                                    App Development</h4>
                             </div>
+
+                            <p className="ps-5 py-3">
+                                Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
+                            </p>
+                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
 
             {/* free Quote */}
-            <div className="conatiner-fluid bg-danger">
+            <div div className="conatiner-fluid bg-danger" >
                 <div className="conatiner py-5">
                     <div className="row py-5 justify-content-center">
                         <div className="col-12 col-lg-6 p-5  bg-white quote-box">
@@ -543,7 +581,7 @@ const Home = () => {
                     </div>
 
                 </div>
-            </div>
+            </div >
             {/* end */}
 
 
@@ -767,13 +805,111 @@ const Home = () => {
 
             {/* testimonials */}
             <div className="container my-5">
-                <div className="row pt-5">
+                <div className="row py-5">
                     <div className="col d-flex flex-column justify-content-center align-items-center ">
                         <h1 className="text-center">
                             <span className="bg-danger px-2 me-1 mt-5 text-white text-uppercase">Testimonials</span> Our Clients Say ! </h1>
                     </div>
-                    <div className="row">
-                        <div className="col"></div>
+                    <div className="row mt-5">
+
+                        <div className="col">
+
+                            <Swiper
+                                {...swiper}
+                                className="testimonial-swiper"
+                            >
+                                {/* Slide 1 */}
+                                <SwiperSlide>
+                                    <div className="testimonial-item">
+
+                                        <div className="testimonial-img">
+                                            <img src={img1} alt="Client" />
+                                        </div>
+
+                                        <div className="testimonial-card">
+
+                                            <div className="quote-icon">
+                                                <i className="fa fa-quote-left"></i>
+                                            </div>
+
+                                            <p>
+                                                Clita clita tempor justo dolor ipsum amet kasd amet duo
+                                                justo duo duo labore sed sed. Magna ut diam sit et amet
+                                                stet eos sed clita erat magna elitr erat sit sit erat at
+                                                rebum justo sea clita.
+                                            </p>
+
+                                            <h3>Alexander Bell</h3>
+
+                                            <span>Programmer</span>
+
+                                        </div>
+
+                                    </div>
+                                </SwiperSlide>
+
+
+                                {/* Slide 2 */}
+                                <SwiperSlide>
+                                    <div className="testimonial-item">
+
+                                        <div className="testimonial-img">
+                                            <img src={img2} alt="Client" />
+                                        </div>
+
+                                        <div className="testimonial-card">
+
+                                            <div className="quote-icon">
+                                                <i className="fa fa-quote-left"></i>
+                                            </div>
+
+                                            <p>
+                                                Magna ut diam sit et amet stet eos sed clita erat magna
+                                                elitr erat sit sit erat at rebum justo sea clita.
+                                            </p>
+
+                                            <h3>Pakura</h3>
+
+                                            <span>Designer</span>
+
+                                        </div>
+
+                                    </div>
+                                </SwiperSlide>
+
+
+                                {/* Slide 3 */}
+                                <SwiperSlide>
+                                    <div className="testimonial-item">
+
+                                        <div className="testimonial-img">
+                                            <img src={img3} alt="Client" />
+                                        </div>
+
+                                        <div className="testimonial-card">
+
+                                            <div className="quote-icon">
+                                                <i className="fa fa-quote-left"></i>
+                                            </div>
+
+                                            <p>
+                                                Clita clita tempor justo dolor ipsum amet kasd amet duo
+                                                justo duo duo labore sed sed. Magna ut diam sit et amet
+                                                stet eos sed clita erat magna elitr erat sit sit erat.
+                                            </p>
+
+                                            <h3>Bradley</h3>
+
+                                            <span>Developer</span>
+
+                                        </div>
+
+                                    </div>
+                                </SwiperSlide>
+                            </Swiper>
+
+                        </div>
+
                     </div>
                 </div>
             </div>

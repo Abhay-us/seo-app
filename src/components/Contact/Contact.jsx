@@ -13,7 +13,7 @@ const Contact = () => {
     }, []);
     return (
         <>
-            <div className="container-fluid bg-danger about-banner">
+            <div className="container-fluid bg-danger hero-container about-banner">
                 <div className="container h-100">
                     <div className="row h-100 align-items-center">
 
@@ -51,7 +51,7 @@ const Contact = () => {
 
             <div className="container text-center my-5">
                 <h1><span className='bg-danger text-white px-2 me-2 py-1'> Contact </span> Have Any Query</h1>
-                <div className="w-50 mt-5 mx-auto">
+                <div className=" w-md-75 w-50 w-sm-100 mt-5 mx-auto">
                     <div className="row g-3">
 
                         <div className="col-md-6">

@@ -15,7 +15,7 @@ const Features = () => {
     }, []);
     return (
         <>
-            <div className="container-fluid bg-danger about-banner">
+            <div className="container-fluid bg-danger hero-container about-banner">
                 <div className="container h-100">
                     <div className="row h-100 align-items-center">
 
@@ -60,7 +60,7 @@ const Features = () => {
                         Why People Choose Us!
                     </h1>
                 </div>
-                <div className="row mt-5 px-5 g-4">
+                <div className="row mt-5 px-2 px-md-5 g-4">
                     <div className="col-12 col-md-6 col-lg-4 text-center reveal-left">
                         <p>
                             <BsGraphUpArrow className="display-4   text-danger feature-icon" />

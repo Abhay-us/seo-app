@@ -34,7 +34,7 @@ const About = () => {
 
     return (
         <>
-            <div className="container-fluid bg-danger about-banner">
+            <div className="container-fluid bg-danger hero-container about-banner">
                 <div className="container h-100">
                     <div className="row h-100 align-items-center ">
 
@@ -44,7 +44,7 @@ const About = () => {
                             </h1>
                         </div>
 
-                        <div className="col-12 col-md-6 text-md-end reveal-right">
+                        <div className="col-12 col-md-6 text-md-end reveal-right ">
                             <span className="text-secondary">
                                 Home
                             </span>
