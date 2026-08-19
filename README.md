@@ -21,8 +21,8 @@ A responsive SEO company website developed using React.js with a modern and user
 
 ## Live Demo
 
-[View Live Website](YOUR_VERCEL_URL)
+https://seo-app-ebon.vercel.app
 
-## GitHub
 
-[View Source Code](YOUR_GITHUB_URL)
+
+
