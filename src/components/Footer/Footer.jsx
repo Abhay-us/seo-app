@@ -54,7 +54,7 @@ const Footer = () => {
 
 
                         {/* Get In Touch */}
-                        <div className="col-lg-3 col-md-6 reveal-sequential ">
+                        <div className="col-lg-3 col-md-6 reveal ">
                             <h4 className="fw-bold text-white mb-4">
                                 Get In Touch
                             </h4>
@@ -102,7 +102,7 @@ const Footer = () => {
 
 
                         {/* Popular Link */}
-                        <div className="col-lg-3 col-md-6 reveal-sequential">
+                        <div className="col-lg-3 col-md-6 reveal">
                             <h4 className="fw-bold text-white mb-4">
                                 Popular Link
                             </h4>
@@ -146,7 +146,7 @@ const Footer = () => {
 
 
                         {/* Project Gallery */}
-                        <div className="col-lg-3 col-md-6 reveal-sequential">
+                        <div className="col-lg-3 col-md-6 reveal">
                             <h4 className="fw-bold text-white mb-4">
                                 Project Gallery
                             </h4>
@@ -209,7 +209,7 @@ const Footer = () => {
 
 
                     {/* Bottom */}
-                    <div className="border-top border-secondary mt-5 pt-4 reveal-sequential">
+                    <div className="border-top border-secondary mt-5 pt-4 reveal">
 
                         <div className="row align-items-center">
 
