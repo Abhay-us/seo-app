@@ -55,7 +55,6 @@ const Testimonials = () => {
                 </div>
             </div>
 
-            {/* testimonials */}
             <div className="container my-5">
                 <div className="row py-5">
                     <div className="col d-flex flex-column justify-content-center align-items-center ">
@@ -153,6 +152,34 @@ const Testimonials = () => {
                                             <h3>Bradley</h3>
 
                                             <span>Developer</span>
+
+                                        </div>
+
+                                    </div>
+                                </SwiperSlide>
+                                <SwiperSlide>
+                                    <div className="testimonial-item">
+
+                                        <div className="testimonial-img">
+                                            <img src={img1} alt="Client" />
+                                        </div>
+
+                                        <div className="testimonial-card">
+
+                                            <div className="quote-icon">
+                                                <FaQuoteLeft />
+                                            </div>
+
+                                            <p>
+                                                Clita clita tempor justo dolor ipsum amet kasd amet duo
+                                                justo duo duo labore sed sed. Magna ut diam sit et amet
+                                                stet eos sed clita erat magna elitr erat sit sit erat at
+                                                rebum justo sea clita.
+                                            </p>
+
+                                            <h3>Alexander Bell</h3>
+
+                                            <span>Programmer</span>
 
                                         </div>
 
