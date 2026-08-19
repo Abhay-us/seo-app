@@ -424,8 +424,8 @@ const Home = () => {
                         </h1>
                     </div>
                     <div className="row mt-5  gap-3 g-5">
-                        <div className="col-12 col-md-6 col-lg service-div reveal ">
-                            <div className="d-flex">
+                        <div className="col-12 col-md-6 p-0 col-lg service-div reveal ">
+                            <div className="d-flex service-div-inner ">
                                 <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
                                     <p className=" ">
                                         <BsGraphUpArrow className="display-5   text-white feature-icon" />
@@ -439,7 +439,7 @@ const Home = () => {
                             </p>
                             <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/service/details">Read More</Link>
                         </div>
-                        <div className="col-12 col-md-6 col-lg service-div reveal ">
+                        <div className="col-12 col-md-6 col-lg p-0 service-div reveal ">
                             <div className="d-flex">
                                 <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
                                     <p className=" ">
@@ -455,7 +455,7 @@ const Home = () => {
                             </p>
                             <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/service/details">Read More</Link>
                         </div>
-                        <div className="col-12 col-md-6 col-lg service-div reveal ">
+                        <div className="col-12 col-md-6 col-lg p-0 service-div reveal ">
                             <div className="d-flex">
                                 <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
                                     <p className=" ">
@@ -472,7 +472,7 @@ const Home = () => {
                         </div>
                     </div>
                     <div className="row mt-5  gap-3 g-5">
-                        <div className="col-12 col-md-6 col-lg service-div reveal">
+                        <div className="col-12 col-md-6 col-lg p-0 service-div reveal">
                             <div className="d-flex">
                                 <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
                                     <p className=" ">
@@ -487,7 +487,7 @@ const Home = () => {
                             </p>
                             <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/service/details">Read More</Link>
                         </div>
-                        <div className="col-12 col-md-6 col-lg service-div reveal ">
+                        <div className="col-12 col-md-6 col-lg p-0 service-div reveal ">
                             <div className="d-flex">
                                 <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
                                     <p className=" ">
@@ -502,7 +502,7 @@ const Home = () => {
                             </p>
                             <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/service/details">Read More</Link>
                         </div>
-                        <div className="col-12 col-md-6 col-lg service-div reveal ">
+                        <div className="col-12 col-md-6 col-lg p-0 service-div reveal ">
                             <div className="d-flex">
                                 <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
                                     <p className=" ">

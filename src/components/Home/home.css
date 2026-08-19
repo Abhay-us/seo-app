@@ -44,9 +44,11 @@
   height: 90px;
   border-radius: 45px 0 45px 0;
 }
+
 .service-div {
   background: #fff;
   box-shadow: 0 0 30px rgba(214, 214, 214, 0.6);
+  border-radius: 45px 0 0 0 !important;
 }
 
 .service-div:hover {
@@ -157,9 +159,6 @@
 .team-div:hover .team-content {
   opacity: 1;
 }
-
-
-
 
 /* swiper */
 .testimonial-swiper {
