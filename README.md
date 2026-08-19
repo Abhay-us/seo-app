@@ -1,16 +1,28 @@
-# React + Vite
+# SEO Company Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive SEO company website developed using React.js with a modern and user-friendly interface.
 
-Currently, two official plugins are available:
+## Technologies Used
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React.js
+- JavaScript
+- HTML5
+- CSS3
+- Bootstrap
+- SCSS
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Responsive design
+- Reusable React components
+- Modern UI layout
+- Mobile, tablet, and desktop support
+- Bootstrap-based responsive sections
 
-## Expanding the ESLint configuration
+## Live Demo
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+[View Live Website](YOUR_VERCEL_URL)
+
+## GitHub
+
+[View Source Code](YOUR_GITHUB_URL)
