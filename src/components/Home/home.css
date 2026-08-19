@@ -102,6 +102,10 @@
   height: 80px;
   background-color: #e31328;
 }
+.project-div {
+  background: #fff;
+  box-shadow: 0 0 30px rgba(214, 214, 214, 0.6);
+}
 .project-div:hover {
   background-color: #e31328;
   transition: all ease-in 0.3s !important;

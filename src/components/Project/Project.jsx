@@ -70,7 +70,7 @@ const Project = () => {
                 </div>
                 <div className="row mt-5 g-4">
                     <div className="col-12 col-md-6 col-lg-4 text-center">
-                        <div className="service-div p-4 reveal project-div">
+                        <div className=" p-4 reveal project-div">
                             <p className="text-center">
                                 <span className="project-icon d-inline-flex justify-content-center align-items-center rounded-circle">
                                     <BsGraphUpArrow className="fs-1  feature-icon" />
@@ -86,7 +86,7 @@ const Project = () => {
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-4 text-center">
-                        <div className="service-div p-4 reveal project-div">
+                        <div className=" p-4 reveal project-div">
                             <p className="text-center">
                                 <span className="project-icon d-inline-flex justify-content-center align-items-center rounded-circle">
                                     <FaLaptop className="fs-1  feature-icon" />
@@ -103,7 +103,7 @@ const Project = () => {
                     </div>
 
                     <div className="col-12 col-md-6 col-lg-4 text-center">
-                        <div className="service-div p-4 reveal project-div">
+                        <div className=" p-4 reveal project-div">
                             <p className="text-center">
                                 <span className="project-icon d-inline-flex justify-content-center align-items-center rounded-circle">
                                     <BsGraphUpArrow className="fs-1  feature-icon" />
@@ -119,7 +119,7 @@ const Project = () => {
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-4 text-center">
-                        <div className="service-div p-4 reveal project-div">
+                        <div className=" p-4 reveal project-div">
                             <p className="text-center">
                                 <span className="project-icon d-inline-flex justify-content-center align-items-center rounded-circle">
                                     <FaArrowPointer className="fs-1  feature-icon" />
@@ -135,7 +135,7 @@ const Project = () => {
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-4 text-center">
-                        <div className="service-div p-4 reveal project-div">
+                        <div className=" p-4 reveal project-div">
                             <p className="text-center">
                                 <span className="project-icon d-inline-flex justify-content-center align-items-center rounded-circle">
                                     <BsGraphUpArrow className="fs-1  feature-icon" />
@@ -152,7 +152,7 @@ const Project = () => {
                     </div>
 
                     <div className="col-12 col-md-6 col-lg-4 text-center">
-                        <div className="service-div p-4 reveal project-div">
+                        <div className=" p-4 reveal project-div">
                             <p className="text-center">
                                 <span className="project-icon d-inline-flex justify-content-center align-items-center rounded-circle">
                                     <BsGraphUpArrow className="fs-1  feature-icon" />
