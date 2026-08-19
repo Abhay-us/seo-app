@@ -1,8 +1,10 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './contact.css'
 import initScrollReveal from '../../js/scrollReveal';
 
 const Contact = () => {
+    const [status, setStatus] = useState(null);
+
     useEffect(() => {
         const sr = initScrollReveal();
         return () => {
@@ -11,6 +13,19 @@ const Contact = () => {
             }
         };
     }, []);
+
+    const handleSubmit = (event) => {
+        event.preventDefault();
+
+        if (!event.currentTarget.checkValidity()) {
+            event.currentTarget.reportValidity();
+            return;
+        }
+
+        setStatus("Thanks — your message is ready to be sent. Connect this form to your email or API service to receive submissions.");
+        event.currentTarget.reset();
+    };
+
     return (
         <>
             <div className="container-fluid bg-danger hero-container about-banner">
@@ -51,56 +66,69 @@ const Contact = () => {
 
             <div className="container text-center my-5">
                 <h1><span className='bg-danger text-white px-2 me-2 py-1'> Contact </span> Have Any Query</h1>
-                <div className=" w-md-75 w-50 w-sm-100 mt-5 mx-auto">
+                <form className="w-50 mt-5 mx-auto" onSubmit={handleSubmit} noValidate>
                     <div className="row g-3">
 
                         <div className="col-md-6">
                             <input
                                 type="text"
+                                name="name"
                                 className="form-control p-3"
                                 placeholder="Your Name"
+                                autoComplete="name"
+                                required
                             />
                         </div>
 
                         <div className="col-md-6">
                             <input
                                 type="email"
+                                name="email"
                                 className="form-control p-3"
                                 placeholder="Your Email"
+                                autoComplete="email"
+                                required
                             />
                         </div>
 
                         <div className="col-md-6">
                             <input
-                                type="text"
+                                type="tel"
+                                name="phone"
                                 className="form-control p-3"
                                 placeholder="Mobile"
+                                autoComplete="tel"
                             />
                         </div>
 
                         <div className="col-md-6">
                             <input
                                 type="text"
+                                name="subject"
                                 className="form-control p-3"
                                 placeholder="Subject"
+                                required
                             />
                         </div>
 
                         <div className="col-12">
                             <textarea
                                 className="form-control p-3"
+                                name="message"
                                 rows="7"
                                 placeholder="Leave a message here"
+                                required
                             ></textarea>
                         </div>
 
                         <div className="col-12">
-                            <button className="btn btn-danger w-100 py-4">
+                            <button type="submit" className="btn btn-danger w-100 py-4">
                                 Send Message
                             </button>
                         </div>
                     </div>
-                </div>
+                    {status && <p className="text-success mt-3 mb-0" role="status">{status}</p>}
+                </form>
             </div>
         </>
     );

@@ -1,4 +1,5 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./home.css";
 import heroimg from "../../assets/hero/hero-header.png";
 import aboutimg from "../../assets/hero/about.png";
@@ -10,7 +11,7 @@ import {
     FaLinkedin,
     FaTrophy,
     FaStar,
-    FaLaptop, FaMobileAlt
+    FaLaptop, FaMobileAlt, FaQuoteLeft
 } from "react-icons/fa";
 import { FaPeopleGroup, FaArrowPointer, } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
@@ -32,6 +33,7 @@ import swiper from "../../js/swiper";
 
 
 const Home = () => {
+    const [newsletterStatus, setNewsletterStatus] = useState(null);
 
     useEffect(() => {
         const sr = initScrollReveal();
@@ -41,6 +43,19 @@ const Home = () => {
             }
         };
     }, []);
+
+    const handleNewsletterSubmit = (event) => {
+        event.preventDefault();
+        const form = event.currentTarget;
+
+        if (!form.checkValidity()) {
+            form.reportValidity();
+            return;
+        }
+
+        setNewsletterStatus("Thanks for subscribing! Connect this form to an email provider to store subscribers.");
+        form.reset();
+    };
 
     return (
         <>
@@ -114,17 +129,17 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="d-flex align-items-center flex-wrap gap-3 mt-3">
-                            <a className="text-white bg-danger p-4 py-3 ">Read More</a>
-                            <a className="bg-secondary btn-square">
+                            <Link to="/about" className="text-white bg-danger p-4 py-3 text-decoration-none">Read More</Link>
+                            <a href="https://www.facebook.com/" target="_blank" rel="noreferrer" aria-label="Visit Facebook" className="bg-secondary btn-square">
                                 <FaFacebookF className=" fs-6   text-white" />
                             </a>
-                            <a className="bg-secondary btn-square">
+                            <a href="https://x.com/" target="_blank" rel="noreferrer" aria-label="Visit X" className="bg-secondary btn-square">
                                 <FaTwitter className=" fs-6    text-white" />
                             </a>
-                            <a className="bg-secondary btn-square">
+                            <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Visit Instagram" className="bg-secondary btn-square">
                                 <FaInstagram className=" fs-6    text-white" />
                             </a>
-                            <a className="bg-secondary btn-square">
+                            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="Visit LinkedIn" className="bg-secondary btn-square">
                                 <FaLinkedin className=" fs-6    text-white" />
                             </a>
                         </div>
@@ -422,7 +437,7 @@ const Home = () => {
                             <p className="ps-5 py-3">
                                 Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/service/details">Read More</Link>
                         </div>
                         <div className="col-12 col-md-6 col-lg service-div reveal ">
                             <div className="d-flex">
@@ -438,7 +453,7 @@ const Home = () => {
                             <p className="ps-5 py-3">
                                 Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/service/details">Read More</Link>
                         </div>
                         <div className="col-12 col-md-6 col-lg service-div reveal ">
                             <div className="d-flex">
@@ -453,7 +468,7 @@ const Home = () => {
                             <p className="ps-5 py-3">
                                 Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/service/details">Read More</Link>
                         </div>
                     </div>
                     <div className="row mt-5  gap-3 g-5">
@@ -470,7 +485,7 @@ const Home = () => {
                             <p className="ps-5 py-3">
                                 Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/service/details">Read More</Link>
                         </div>
                         <div className="col-12 col-md-6 col-lg service-div reveal ">
                             <div className="d-flex">
@@ -485,7 +500,7 @@ const Home = () => {
                             <p className="ps-5 py-3">
                                 Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/service/details">Read More</Link>
                         </div>
                         <div className="col-12 col-md-6 col-lg service-div reveal ">
                             <div className="d-flex">
@@ -501,7 +516,7 @@ const Home = () => {
                             <p className="ps-5 py-3">
                                 Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/service/details">Read More</Link>
                         </div>
                     </div>
                 </div>
@@ -609,7 +624,7 @@ const Home = () => {
                                 Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur
                                 adipisicing elite.
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/project/details">Read More</Link>
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-4 text-center">
@@ -625,7 +640,7 @@ const Home = () => {
                                 Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur
                                 adipisicing elite.
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/project/details">Read More</Link>
                         </div>
                     </div>
 
@@ -642,7 +657,7 @@ const Home = () => {
                                 Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur
                                 adipisicing elite.
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/project/details">Read More</Link>
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-4 text-center">
@@ -658,7 +673,7 @@ const Home = () => {
                                 Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur
                                 adipisicing elite.
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/project/details">Read More</Link>
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-4 text-center">
@@ -674,7 +689,7 @@ const Home = () => {
                                 Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur
                                 adipisicing elite.
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/project/details">Read More</Link>
                         </div>
                     </div>
 
@@ -691,7 +706,7 @@ const Home = () => {
                                 Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur
                                 adipisicing elite.
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/project/details">Read More</Link>
                         </div>
                     </div>
                 </div>
@@ -707,10 +722,12 @@ const Home = () => {
                         <div className="col d-flex flex-column justify-content-center align-items-center reveal">
                             <h1 className="text-white text-center">Subscribe the
                                 <span className="bg-white ms-2 px-2 text-danger text-uppercase">Newsletter</span> </h1>
-                            <div className="position-relative mt-4 w-50 newsletter">
-                                <input className="form-control px-4 py-3" type="text" placeholder="Enter Your Email " />
-                                <button className="position-absolute top-0 end-0 border-0 me-3 bg-transparent"><BsSendFill className="text-danger fs-3 my-3 " /></button>
-                            </div>
+                            <form className="position-relative mt-4 w-50 newsletter" onSubmit={handleNewsletterSubmit} noValidate>
+                                <label className="visually-hidden" htmlFor="newsletter-email">Email address</label>
+                                <input id="newsletter-email" name="email" className="form-control px-4 py-3" type="email" placeholder="Enter your email" autoComplete="email" required />
+                                <button type="submit" aria-label="Subscribe to newsletter" className="position-absolute top-0 end-0 border-0 me-3 bg-transparent"><BsSendFill className="text-danger fs-3 my-3 " /></button>
+                            </form>
+                            {newsletterStatus && <p className="mt-3 text-white" role="status">{newsletterStatus}</p>}
                             <p className="mt-3" >Diam sed sed dolor stet amet eirmod</p>
 
                         </div>
@@ -829,7 +846,7 @@ const Home = () => {
                                         <div className="testimonial-card">
 
                                             <div className="quote-icon">
-                                                <i className="fa fa-quote-left"></i>
+                                                <FaQuoteLeft />
                                             </div>
 
                                             <p>
@@ -860,7 +877,7 @@ const Home = () => {
                                         <div className="testimonial-card">
 
                                             <div className="quote-icon">
-                                                <i className="fa fa-quote-left"></i>
+                                                <FaQuoteLeft />
                                             </div>
 
                                             <p>
@@ -889,7 +906,7 @@ const Home = () => {
                                         <div className="testimonial-card">
 
                                             <div className="quote-icon">
-                                                <i className="fa fa-quote-left"></i>
+                                                <FaQuoteLeft />
                                             </div>
 
                                             <p>
@@ -901,6 +918,34 @@ const Home = () => {
                                             <h3>Bradley</h3>
 
                                             <span>Developer</span>
+
+                                        </div>
+
+                                    </div>
+                                </SwiperSlide>
+                                     <SwiperSlide>
+                                    <div className="testimonial-item">
+
+                                        <div className="testimonial-img">
+                                            <img src={img1} alt="Client" />
+                                        </div>
+
+                                        <div className="testimonial-card">
+
+                                            <div className="quote-icon">
+                                                <FaQuoteLeft />
+                                            </div>
+
+                                            <p>
+                                                Clita clita tempor justo dolor ipsum amet kasd amet duo
+                                                justo duo duo labore sed sed. Magna ut diam sit et amet
+                                                stet eos sed clita erat magna elitr erat sit sit erat at
+                                                rebum justo sea clita.
+                                            </p>
+
+                                            <h3>Alexander Bell</h3>
+
+                                            <span>Programmer</span>
 
                                         </div>
 

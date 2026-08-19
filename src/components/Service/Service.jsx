@@ -1,10 +1,12 @@
-import { FaLaptop, FaMobileAlt } from 'react-icons/fa';
+import { FaLaptop, FaMobileAlt, FaQuoteLeft } from 'react-icons/fa';
 import './service.css'
+import '../Pages/testimonial.css'
 import { BsGraphUpArrow } from 'react-icons/bs';
 import { IoShareSocial } from 'react-icons/io5';
 import { MdEmail } from 'react-icons/md';
 import { FaArrowPointer } from 'react-icons/fa6';
 import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import initScrollReveal from '../../js/scrollReveal';
 import { Swiper, SwiperSlide } from "swiper/react";
 import swiper from "../../js/swiper";
@@ -84,7 +86,7 @@ const Service = () => {
                             <p className="ps-5 py-3">
                                 Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/service/details">Read More</Link>
                         </div>
                         <div className="col-12 col-md-6 col-lg-4 p-0 reveal service-div  ">
                             <div className="d-flex">
@@ -100,7 +102,7 @@ const Service = () => {
                             <p className="ps-5 py-3">
                                 Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/service/details">Read More</Link>
                         </div>
                         <div className="col-12 col-md-6 col-lg-4 p-0 reveal service-div  ">
                             <div className="d-flex">
@@ -115,7 +117,7 @@ const Service = () => {
                             <p className="ps-5 py-3">
                                 Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/service/details">Read More</Link>
                         </div>
                     </div>
                     <div className="row mt-4 g-4">
@@ -132,7 +134,7 @@ const Service = () => {
                             <p className="ps-5 py-3">
                                 Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/service/details">Read More</Link>
                         </div>
                         <div className="col-12 col-md-6 col-lg-4 p-0 reveal service-div  ">
                             <div className="d-flex">
@@ -147,7 +149,7 @@ const Service = () => {
                             <p className="ps-5 py-3">
                                 Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/service/details">Read More</Link>
                         </div>
                         <div className="col-12 col-md-6 col-lg-4 p-0 reveal service-div  ">
                             <div className="d-flex">
@@ -163,7 +165,7 @@ const Service = () => {
                             <p className="ps-5 py-3">
                                 Clita erat ipsum et lorem et sit, sed stet no labore lorem sit. Sanctus clita duo justo et tempor eirmod magna
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/service/details">Read More</Link>
                         </div>
                     </div>
                 </div>
@@ -272,7 +274,7 @@ const Service = () => {
                                         <div className="testimonial-card">
 
                                             <div className="quote-icon">
-                                                <i className="fa fa-quote-left"></i>
+                                                <FaQuoteLeft />
                                             </div>
 
                                             <p>
@@ -303,7 +305,7 @@ const Service = () => {
                                         <div className="testimonial-card">
 
                                             <div className="quote-icon">
-                                                <i className="fa fa-quote-left"></i>
+                                                <FaQuoteLeft />
                                             </div>
 
                                             <p>
@@ -332,7 +334,7 @@ const Service = () => {
                                         <div className="testimonial-card">
 
                                             <div className="quote-icon">
-                                                <i className="fa fa-quote-left"></i>
+                                                <FaQuoteLeft />
                                             </div>
 
                                             <p>

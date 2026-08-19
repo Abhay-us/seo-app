@@ -1,9 +1,11 @@
 import { BsGraphUpArrow } from 'react-icons/bs';
 import initScrollReveal from '../../js/scrollReveal';
 import './project.css'
+import '../Pages/testimonial.css'
 import { useEffect } from "react";
+import { Link } from 'react-router-dom';
 import { FaArrowPointer } from 'react-icons/fa6';
-import { FaLaptop } from 'react-icons/fa';
+import { FaLaptop, FaQuoteLeft } from 'react-icons/fa';
 import { Swiper, SwiperSlide } from "swiper/react";
 import swiper from "../../js/swiper";
 import img1 from '../../assets/footer/project-1.jpg'
@@ -80,7 +82,7 @@ const Project = () => {
                                 Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur
                                 adipisicing elite.
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/project/details">Read More</Link>
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-4 text-center">
@@ -96,7 +98,7 @@ const Project = () => {
                                 Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur
                                 adipisicing elite.
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/project/details">Read More</Link>
                         </div>
                     </div>
 
@@ -113,7 +115,7 @@ const Project = () => {
                                 Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur
                                 adipisicing elite.
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/project/details">Read More</Link>
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-4 text-center">
@@ -129,7 +131,7 @@ const Project = () => {
                                 Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur
                                 adipisicing elite.
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/project/details">Read More</Link>
                         </div>
                     </div>
                     <div className="col-12 col-md-6 col-lg-4 text-center">
@@ -145,7 +147,7 @@ const Project = () => {
                                 Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur
                                 adipisicing elite.
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/project/details">Read More</Link>
                         </div>
                     </div>
 
@@ -162,7 +164,7 @@ const Project = () => {
                                 Dolorem, quaerat?Lorem ipsum dolor sit amet consectetur
                                 adipisicing elite.
                             </p>
-                            <a className="btn bg-secondary mb-5  text-white px-3 mt-3 mx-5" href="">Read More</a>
+                            <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/project/details">Read More</Link>
                         </div>
                     </div>
                 </div>
@@ -272,7 +274,7 @@ const Project = () => {
                                         <div className="testimonial-card">
 
                                             <div className="quote-icon">
-                                                <i className="fa fa-quote-left"></i>
+                                                <FaQuoteLeft />
                                             </div>
 
                                             <p>
@@ -303,7 +305,7 @@ const Project = () => {
                                         <div className="testimonial-card">
 
                                             <div className="quote-icon">
-                                                <i className="fa fa-quote-left"></i>
+                                                <FaQuoteLeft />
                                             </div>
 
                                             <p>
@@ -332,7 +334,7 @@ const Project = () => {
                                         <div className="testimonial-card">
 
                                             <div className="quote-icon">
-                                                <i className="fa fa-quote-left"></i>
+                                                <FaQuoteLeft />
                                             </div>
 
                                             <p>

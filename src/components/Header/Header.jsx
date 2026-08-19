@@ -44,9 +44,9 @@ const Header = () => {
                     <nav className="d-flex flex-column flex-md-row align-items-center justify-content-around gap-3 gap-md-0 pb-3 pb-md-0">
 
                         {/* Logo */}
-                        <a className="navbar-brand" href="">
+                        <NavLink className="navbar-brand" to="/">
                             <h1>SEOcom</h1>
-                        </a>
+                        </NavLink>
 
 
                         {/* Navigation */}
@@ -179,9 +179,9 @@ const Header = () => {
 
 
                         {/* Quote Button */}
-                        <button className="text-white px-3 py-2 bg-secondary">
+                        <NavLink to="/contact" className="text-white px-3 py-2 bg-secondary text-decoration-none">
                             Get a Quote
-                        </button>
+                        </NavLink>
 
                     </nav>
 

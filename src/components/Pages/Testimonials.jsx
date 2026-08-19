@@ -3,6 +3,7 @@ import './testimonial.css'
 import initScrollReveal from '../../js/scrollReveal';
 import { Swiper, SwiperSlide } from "swiper/react";
 import swiper from "../../js/swiper";
+import { FaQuoteLeft } from 'react-icons/fa';
 import img1 from '../../assets/footer/project-1.jpg'
 import img2 from '../../assets/footer/project-2.jpg'
 import img3 from '../../assets/footer/project-3.jpg'
@@ -80,7 +81,7 @@ const Testimonials = () => {
                                         <div className="testimonial-card">
 
                                             <div className="quote-icon">
-                                                <i className="fa fa-quote-left"></i>
+                                                <FaQuoteLeft />
                                             </div>
 
                                             <p>
@@ -111,7 +112,7 @@ const Testimonials = () => {
                                         <div className="testimonial-card">
 
                                             <div className="quote-icon">
-                                                <i className="fa fa-quote-left"></i>
+                                                <FaQuoteLeft />
                                             </div>
 
                                             <p>
@@ -140,7 +141,7 @@ const Testimonials = () => {
                                         <div className="testimonial-card">
 
                                             <div className="quote-icon">
-                                                <i className="fa fa-quote-left"></i>
+                                                <FaQuoteLeft />
                                             </div>
 
                                             <p>
