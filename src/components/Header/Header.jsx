@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./header.css";
+import "./header.scss";
 import { Dropdown } from "react-bootstrap";
 
 
@@ -36,9 +36,7 @@ const Header = () => {
 
     return (
         <>
-
             <div className="container-fluid bg-danger">
-
                 <div className="nav-container pt-3">
 
                     <nav className="d-flex flex-column flex-md-row align-items-center justify-content-around gap-3 gap-md-0 pb-3 pb-md-0">

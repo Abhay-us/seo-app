@@ -1,4 +1,4 @@
-import './footer.css'
+import './footer.scss'
 import { FaLocationDot } from "react-icons/fa6";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import {
