@@ -1,6 +1,4 @@
 import { FaLaptop, FaMobileAlt, FaQuoteLeft } from 'react-icons/fa';
-import './service.css'
-import '../Pages/testimonial.css'
 import { BsGraphUpArrow } from 'react-icons/bs';
 import { IoShareSocial } from 'react-icons/io5';
 import { MdEmail } from 'react-icons/md';
@@ -14,6 +12,7 @@ import img1 from '../../assets/footer/project-1.jpg'
 import img2 from '../../assets/footer/project-2.jpg'
 import img3 from '../../assets/footer/project-3.jpg'
 const Service = () => {
+
     useEffect(() => {
         const sr = initScrollReveal();
         return () => {
@@ -72,9 +71,9 @@ const Service = () => {
                             What Solutions We Provide
                         </h1>
                     </div>
-                    <div className="row mt-5 g-4">
-                        <div className="col-12 col-md-6 col-lg-4 p-0 reveal service-div  ">
-                            <div className="d-flex">
+                    <div className="row mt-5  gap-3 g-5">
+                        <div className="col-12 col-md-6 p-0 col-lg service-div reveal ">
+                            <div className="d-flex service-div-inner ">
                                 <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
                                     <p className=" ">
                                         <BsGraphUpArrow className="display-5   text-white feature-icon" />
@@ -88,7 +87,7 @@ const Service = () => {
                             </p>
                             <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/service/details">Read More</Link>
                         </div>
-                        <div className="col-12 col-md-6 col-lg-4 p-0 reveal service-div  ">
+                        <div className="col-12 col-md-6 col-lg p-0 service-div reveal ">
                             <div className="d-flex">
                                 <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
                                     <p className=" ">
@@ -104,7 +103,7 @@ const Service = () => {
                             </p>
                             <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/service/details">Read More</Link>
                         </div>
-                        <div className="col-12 col-md-6 col-lg-4 p-0 reveal service-div  ">
+                        <div className="col-12 col-md-6 col-lg p-0 service-div reveal ">
                             <div className="d-flex">
                                 <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
                                     <p className=" ">
@@ -120,8 +119,8 @@ const Service = () => {
                             <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/service/details">Read More</Link>
                         </div>
                     </div>
-                    <div className="row mt-4 g-4">
-                        <div className="col-12 col-md-6 col-lg-4 p-0 reveal service-div ">
+                    <div className="row mt-5  gap-3 g-5">
+                        <div className="col-12 col-md-6 col-lg p-0 service-div reveal">
                             <div className="d-flex">
                                 <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
                                     <p className=" ">
@@ -136,7 +135,7 @@ const Service = () => {
                             </p>
                             <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/service/details">Read More</Link>
                         </div>
-                        <div className="col-12 col-md-6 col-lg-4 p-0 reveal service-div  ">
+                        <div className="col-12 col-md-6 col-lg p-0 service-div reveal ">
                             <div className="d-flex">
                                 <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
                                     <p className=" ">
@@ -151,7 +150,7 @@ const Service = () => {
                             </p>
                             <Link className="btn bg-secondary mb-5 text-white px-3 mt-3 mx-5" to="/service/details">Read More</Link>
                         </div>
-                        <div className="col-12 col-md-6 col-lg-4 p-0 reveal service-div  ">
+                        <div className="col-12 col-md-6 col-lg p-0 service-div reveal ">
                             <div className="d-flex">
                                 <div className="bg-danger d-flex align-items-center justify-content-center service-icon">
                                     <p className=" ">
@@ -169,7 +168,7 @@ const Service = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </div >
 
             {/* free Quote */}
             <div className="conatiner-fluid bg-danger">
@@ -385,7 +384,7 @@ const Service = () => {
 
                     </div>
                 </div>
-            </div>  
+            </div>
         </>
     );
 };

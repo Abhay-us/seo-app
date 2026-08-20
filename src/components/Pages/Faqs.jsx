@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import './faqs.css'
 import initScrollReveal from '../../js/scrollReveal';
 import { FaSearch } from 'react-icons/fa';
 import { Accordion } from 'react-bootstrap';

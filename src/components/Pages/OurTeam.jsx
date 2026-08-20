@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import './ourTeam.css'
 import initScrollReveal from '../../js/scrollReveal';
 import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 import post01 from '../../assets/hero/team/post-01.png'

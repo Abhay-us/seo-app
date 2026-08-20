@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import './features.css'
 import initScrollReveal from '../../js/scrollReveal';
 import { BsGraphUpArrow } from 'react-icons/bs';
 

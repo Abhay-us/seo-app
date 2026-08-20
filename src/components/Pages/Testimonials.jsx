@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import './testimonial.css'
 import initScrollReveal from '../../js/scrollReveal';
 import { Swiper, SwiperSlide } from "swiper/react";
 import swiper from "../../js/swiper";

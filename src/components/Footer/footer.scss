@@ -10,8 +10,8 @@
   .link-a {
     color: rgba(128, 128, 128, 0.723);
 
-    :hover {
-      transform: scale(1.1);
+    &:hover {
+      transform: scale(1.1) !important;
       color: #fff;
       transition: transform 0.2s ease;
     }

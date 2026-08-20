@@ -1,23 +1,3 @@
-.hero-container {
-  position: relative;
-  overflow: hidden;
-}
-
-.hero-container::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: url("../../assets/hero/hero-header-bg.png");
-  background-size: auto;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  animation: animateUpDown 8s ease infinite;
-  z-index: -1;
-}
 @keyframes animateUpDown {
   0% {
     transform: translateY(0);
@@ -31,8 +11,28 @@
     transform: translateY(0);
   }
 }
-.hero-p {
-  background-color: #ff576589;
+.hero-container {
+  position: relative;
+  overflow: hidden;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: url("../../assets/hero/hero-header-bg.png");
+    background-size: auto;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: animateUpDown 8s ease infinite;
+    z-index: -1;
+  }
+
+  .hero-p {
+    background-color: #ff576589;
+  }
 }
 .feature-icon {
   stroke-width: 1.5;
@@ -49,83 +49,97 @@
   background: #fff;
   box-shadow: 0 0 30px rgba(214, 214, 214, 0.6);
   border-radius: 45px 0 0 0 !important;
-}
 
-.service-div:hover {
-  transform: translateY(-12px);
-  transition: all ease 0.8s;
+  &:hover {
+    transform: translateY(-12px);
+    transition: all ease 0.8s;
+  }
 }
-
 /* quote */
-.quote-field:focus-within {
-  border-color: #d813232d !important ;
-  background-color: rgba(128, 128, 128, 0.084);
-  box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.4);
-}
 .quote-field {
   background-color: #f1f1f1;
   padding: 10px 16px;
   height: 72px;
   border-radius: 4px;
-}
 
-.quote-field label {
-  display: block;
-  color: #8a94a6;
-  font-size: 16px;
-  margin-bottom: 2px;
-}
+  &:focus-within {
+    border-color: #d813232d !important ;
+    background-color: rgba(128, 128, 128, 0.084);
+    box-shadow: 0 0 0 0.25rem rgba(253, 13, 13, 0.4);
+  }
 
-.quote-field input,
-.quote-field select,
-.quote-field textarea {
-  outline: none;
-}
+  label {
+    display: block;
+    color: #8a94a6;
+    font-size: 16px;
+    margin-bottom: 2px;
+  }
 
+  input,
+  select,
+  textarea {
+    outline: none;
+  }
+}
 .message-field {
   height: 125px;
+
+  textarea {
+    height: 85px;
+    resize: none;
+  }
 }
 
-.message-field textarea {
-  height: 85px;
-  resize: none;
+.sub-btn {
+  &:hover {
+    background-color: #b2202f;
+    transition: all ease-in 0.6s;
+  }
 }
-.sub-btn:hover {
-  background-color: #b2202f;
-  transition: all ease-in 0.6s;
-}
-
 /* project-icon */
-
-.project-icon {
-  width: 80px;
-  height: 80px;
-  background-color: #e31328;
-}
 .project-div {
   background: #fff;
   box-shadow: 0 0 30px rgba(214, 214, 214, 0.6);
-}
-.project-div:hover {
-  background-color: #e31328;
-  transition: all ease-in 0.3s !important;
-}
-.project-div:hover p {
-  color: #fff;
-}
-.project-div:hover .project-icon {
-  background-color: #f1f1f1;
-}
-.feature-icon {
-  color: #fff;
-}
-.project-div:hover .feature-icon {
-  color: #e31327;
+
+  .project-icon {
+    width: 80px;
+    height: 80px;
+    background-color: #e31328;
+  }
+  .feature-icon {
+    color: #fff;
+  }
+  &:hover {
+    background-color: #e31328;
+    transition: all ease-in 0.3s !important;
+
+    p {
+      color: #fff;
+    }
+    .project-icon {
+      background-color: #f1f1f1;
+    }
+
+    .feature-icon {
+      color: #e31327;
+    }
+  }
 }
 /* team */
-.team-div img {
-  height: 400px;
-  object-fit: cover;
+.team-div {
+  img {
+    height: 400px;
+    object-fit: cover;
+  }
+  &:hover {
+    .team-left-overlay,
+    .team-right-overlay {
+      transform: translateX(0);
+    }
+    .team-content {
+      opacity: 1;
+    }
+  }
 }
 
 .team-left-overlay,
@@ -138,7 +152,6 @@
   transition: transform 0.5s ease;
   z-index: 1;
 }
-
 .team-left-overlay {
   left: 0;
   transform: translateX(-100%);
@@ -149,19 +162,10 @@
   transform: translateX(100%);
 }
 
-.team-div:hover .team-left-overlay,
-.team-div:hover .team-right-overlay {
-  transform: translateX(0);
-}
-
 .team-content {
   z-index: 2;
   opacity: 0;
   transition: opacity 0.3s ease 0.4s;
-}
-
-.team-div:hover .team-content {
-  opacity: 1;
 }
 
 /* swiper */
@@ -169,116 +173,96 @@
   width: 100%;
   padding: 70px 0 50px;
   overflow: visible;
-}
 
-/* Every slide */
+  .swiper-slide {
+    opacity: 0.12;
+    transition: opacity 0.5s ease;
 
-.testimonial-swiper .swiper-slide {
-  opacity: 0.12;
-  transition: opacity 0.5s ease;
-}
+    &.swiper-slide-active {
+      opacity: 1;
+    }
 
-/* Active / center slide */
+    .testimonial-item {
+      position: relative;
+      padding-top: 70px;
 
-.testimonial-swiper .swiper-slide-active {
-  opacity: 1;
-}
+      .testimonial-img {
+        position: absolute;
 
-/* Main item */
+        top: 0;
+        left: 50%;
 
-.testimonial-item {
-  position: relative;
-  padding-top: 70px;
-}
+        width: 110px;
+        height: 110px;
 
-/* Client image */
+        transform: translateX(-50%);
 
-.testimonial-img {
-  position: absolute;
+        z-index: 5;
 
-  top: 0;
-  left: 50%;
+        img {
+          width: 100%;
+          height: 100%;
 
-  width: 110px;
-  height: 110px;
+          object-fit: cover;
 
-  transform: translateX(-50%);
+          border-radius: 50%;
+        }
+      }
+      .testimonial-card {
+        width: 100%;
+        min-height: 325px;
 
-  z-index: 5;
-}
+        padding: 110px 35px 30px;
 
-.testimonial-img img {
-  width: 100%;
-  height: 100%;
+        background: #ffffff;
 
-  object-fit: cover;
+        text-align: center;
 
-  border-radius: 50%;
-}
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
 
-/* Card */
+        transition: all 0.5s ease;
 
-.testimonial-card {
-  width: 100%;
-  min-height: 325px;
+        .quote-icon {
+          margin-bottom: 15px;
 
-  padding: 110px 35px 30px;
+          svg {
+            font-size: 80px;
 
-  background: #ffffff;
+            line-height: 0.8;
 
-  text-align: center;
+            color: #e31328;
+          }
+        }
+        p {
+          max-width: 680px;
 
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+          margin: 0 auto 20px;
 
-  transition: all 0.5s ease;
-}
+          color: #405777;
 
-/* Quote */
+          font-size: 17px;
+          line-height: 1.6;
+        }
 
-.quote-icon {
-  margin-bottom: 15px;
-}
+        h3 {
+          margin: 0 0 4px;
 
-.quote-icon svg {
-  font-size: 80px;
+          color: #062c61;
 
-  line-height: 0.8;
+          font-size: 26px;
+          font-weight: 700;
+        }
 
-  color: #e31328;
-}
+        span {
+          color: #405777;
 
-/* Text */
+          font-size: 17px;
 
-.testimonial-card p {
-  max-width: 680px;
-
-  margin: 0 auto 20px;
-
-  color: #405777;
-
-  font-size: 17px;
-  line-height: 1.6;
-}
-
-/* Name */
-
-.testimonial-card h3 {
-  margin: 0 0 4px;
-
-  color: #062c61;
-
-  font-size: 26px;
-  font-weight: 700;
-}
-
-/* Designation */
-
-.testimonial-card span {
-  color: #405777;
-
-  font-size: 17px;
-
-  font-style: italic;
+          font-style: italic;
+        }
+      }
+    }
+  }
 }
 
 /* Mobile */
@@ -286,40 +270,41 @@
 @media (max-width: 767px) {
   .testimonial-swiper {
     overflow: hidden;
-  }
 
-  .testimonial-swiper .swiper-slide {
-    opacity: 1;
-  }
+    .swiper-slide {
+      opacity: 1;
 
-  .testimonial-card {
-    padding: 100px 20px 25px;
-    min-height: auto;
-  }
+      .testimonial-item {
+        padding-top: 60px;
+        .testimonial-card {
+          padding: 100px 20px 25px;
+          min-height: auto;
+        }
+        .testimonial-img {
+          width: 90px;
+          height: 90px;
+        }
+        .testimonial-card {
+          p {
+            font-size: 15px;
+          }
 
-  .testimonial-card p {
-    font-size: 15px;
-  }
+          h3 {
+            font-size: 22px;
+          }
 
-  .testimonial-card h3 {
-    font-size: 22px;
-  }
+          span {
+            font-size: 15px;
+          }
 
-  .testimonial-card span {
-    font-size: 15px;
-  }
-
-  .quote-icon svg {
-    font-size: 60px;
-  }
-
-  .testimonial-img {
-    width: 90px;
-    height: 90px;
-  }
-
-  .testimonial-item {
-    padding-top: 60px;
+          .quote-icon {
+            svg {
+              font-size: 60px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media (max-width: 575.98px) {

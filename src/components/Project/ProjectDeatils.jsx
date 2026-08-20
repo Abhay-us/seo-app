@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import './projectDetails.css'
 import initScrollReveal from '../../js/scrollReveal';
 import { IoIosCheckbox } from "react-icons/io";
 import serviceDetailImg from '../../assets/service-details/service-details.png'

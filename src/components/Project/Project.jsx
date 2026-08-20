@@ -1,7 +1,5 @@
 import { BsGraphUpArrow } from 'react-icons/bs';
 import initScrollReveal from '../../js/scrollReveal';
-import './project.css'
-import '../Pages/testimonial.css'
 import { useEffect } from "react";
 import { Link } from 'react-router-dom';
 import { FaArrowPointer } from 'react-icons/fa6';

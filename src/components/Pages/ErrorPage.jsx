@@ -1,5 +1,4 @@
 import { useEffect } from 'react';
-import './errorPage.css'
 import initScrollReveal from '../../js/scrollReveal';
 import { FaExclamationTriangle } from 'react-icons/fa';
 
